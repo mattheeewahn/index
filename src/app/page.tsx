@@ -172,7 +172,7 @@ export default function Home() {
           표층류의 북상과 심층류의 남하로 구성되는 열염순환의 단면 모식도. 담수 유입에 따른 순환 세기 변화가 반영된다.
         </p>
         {simulation && (
-          <AMOCDiagram transportRatio={simulation.result.transportRatio} status={simulation.status} />
+          <AMOCDiagram transportRatio={simulation.result.transportRatio} status={simulation.status} freshwaterInput={freshwaterInput} />
         )}
       </section>
 
